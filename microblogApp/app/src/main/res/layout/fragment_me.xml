@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:titleTextColor="#ffffff"
+            app:title="About me" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="239dp"
+                android:layout_height="214dp"
+                android:layout_margin="50dp"
+                android:id="@+id/user_icon"
+                android:scaleType="fitCenter"
+                android:src="@drawable/set_icon" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/change_icon"
+                android:textAllCaps="false"
+                android:text="Change avatar" />
+
+            <TextView
+                android:id="@+id/me_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="20sp"
+                android:textColor="#000000"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:text="Blacklist"
+                    android:layout_marginLeft="110dp"
+                    android:id="@+id/bl_button"/>
+                
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:layout_marginLeft="10dp"
+                    android:text="DM"
+                    android:id="@+id/DM_button"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_margin="20dp"
+                android:textAllCaps="false"
+                android:text="Log out" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

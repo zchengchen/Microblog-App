@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:titleTextColor="#ffffff"
+            app:title="Info" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="239dp"
+                android:layout_height="214dp"
+                android:layout_margin="50dp"
+                android:id="@+id/user_icon"
+                android:scaleType="fitCenter"
+                android:src="@drawable/set_icon" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:id="@+id/om_ban_button"
+                    android:layout_marginLeft="110dp"
+                    android:text="Ban" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/om_DM_button"
+                    android:text="DM" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/other_microblogid"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="20sp"
+                android:textColor="#000000"/>
+
+            <Button
+                android:id="@+id/goback_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:layout_gravity="bottom"
+                android:layout_margin="20dp"
+                android:text="Go back" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

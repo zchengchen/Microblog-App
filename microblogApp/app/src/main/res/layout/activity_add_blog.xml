@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddBlogActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/add_blog_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:navigationIcon="@mipmap/left_arrow"
+            app:titleTextColor="#ffffff"
+            app:title="Send your new mircoblog now!">
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageButton
+                android:id="@+id/upload_pic1"
+                android:layout_width="138dp"
+                android:layout_height="138dp"
+                android:background="@drawable/add_24"
+                android:paddingTop="100dp"
+                android:scaleType="fitXY" />
+
+            <ImageButton
+                android:id="@+id/upload_pic2"
+                android:layout_width="138dp"
+                android:layout_height="138dp"
+                android:paddingTop="100dp"
+                android:background="@drawable/add_24"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/upload_pic3"
+                android:layout_width="138dp"
+                android:layout_height="138dp"
+                android:paddingTop="100dp"
+                android:background="@drawable/add_24"
+                android:scaleType="fitCenter" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/add_blog"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape"
+            android:enabled="true"
+            android:hint="Talk something."
+            android:gravity="top"
+            android:maxLines="12"
+            android:minLines="8"
+            android:scrollbars="vertical" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

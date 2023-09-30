@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?actionBarSize"
+            app:title="Sign in"
+            app:titleTextColor="#ffffff" />
+
+        <ImageView
+            android:id="@+id/upload_icon"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:paddingTop="100dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/set_icon" />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Avatar"
+            android:textColor="#000000"
+            android:textSize="24sp"/>
+
+        <EditText
+            android:id="@+id/set_account"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="56dp"
+            android:layout_marginEnd="24dp"
+            android:hint="Account"
+            android:inputType="textEmailAddress"
+            android:saveEnabled="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/set_password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:hint="Password"
+            android:imeActionLabel=""
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:saveEnabled="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/account" />
+
+        <EditText
+            android:id="@+id/set_password2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:hint="Confirm password"
+            android:imeActionLabel=""
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:saveEnabled="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/account" />
+
+        <Button
+            android:id="@+id/register"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:textAllCaps="false"
+            android:layout_span="2"
+            android:text="Sign in" />
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

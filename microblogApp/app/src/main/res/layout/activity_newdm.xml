@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/dm_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:titleTextColor="#ffffff"
+            app:title="Direct Mail" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/new_dm_to"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textSize="20sp"
+                    android:text="To: "
+                    android:textColor="#000000"/>
+
+                <EditText
+                    android:id="@+id/new_dm_to_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center"
+                    android:hint="username"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textSize="20sp"
+                    android:text="Title: "
+                    android:textColor="#000000"/>
+
+                <EditText
+                    android:id="@+id/dm_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="top"
+                    android:textSize="20sp"
+                    android:hint="Title"
+                    android:textColor="#000000"/>
+            </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="20sp"
+            android:text="Content: "
+            android:textColor="#000000"/>
+
+        <EditText
+            android:id="@+id/dm_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top"
+            android:textSize="20sp"
+            android:hint="Say what you want."
+            android:textColor="#000000"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
